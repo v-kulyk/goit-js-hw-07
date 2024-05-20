@@ -64,13 +64,19 @@ ul.gallery {
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
+  width: 1128px;
+  margin: 0 auto;
 }
 
 ul.gallery li {
-  max-width: 300px;
+  width: 360px;
+  height: 300px;
 }
 
 ul.gallery li img {
   max-width: 100%;
+
+  object-fit: cover;
+  aspect-ratio: 360 / 300;
 }
