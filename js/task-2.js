@@ -42,16 +42,16 @@ const targetList = document.querySelector("ul.gallery");
 
 const listItems = images.slice(0, 3).map((image) => {
   const listItem = document.createElement("li");
-  listItem.classList.add('gallery__item');
+  listItem.classList.add("gallery__item");
 
   const imageElement = document.createElement("img");
   imageElement.src = image.url;
   imageElement.alt = image.alt;
-  imageElement.classList.add('gallery__image');
+  imageElement.classList.add("gallery__image");
 
   listItem.append(imageElement);
 
-  return listItem
+  return listItem;
 });
 
 targetList.append(...listItems);
