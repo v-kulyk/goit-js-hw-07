@@ -84,14 +84,15 @@ ul.gallery li img {
 input[type="text"],
 input[type="number"],
 input[type="email"],
-input[type="password"]
-{
+input[type="password"] {
   color: #2e2f42;
   padding: 8px 16px;
   border: 1px solid #808080;
   border-radius: 4px;
   outline: none;
+  display: block;
 }
+
 input[type="text"]:hover,
 input[type="number"]:hover,
 input[type="email"]:hover,
@@ -122,4 +123,59 @@ h1 {
   font-size: 24px;
   line-height: 1.33;
   color: #2e2f42;
+}
+
+form.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  padding: 24px;
+}
+
+form.login-form label {
+  color: #2e2f42;
+}
+
+form.login-form input {
+  width: 100%;
+  margin-top: 8px;
+}
+form.login-form button {
+  margin-top: 8px;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #6c8cff;
+}
+
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px; 
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.widget p {
+  color: #2e2f42; 
+}
+.widget button{
+  font-weight: 500;
+  color: #fff;
 }
